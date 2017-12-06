@@ -3,7 +3,7 @@ if ( typeof window === 'undefined' ) {
   var expect = require('chai').expect;
 }
 
-describe('functions', function() {
+describe.only('functions', function() {
   var sayItCalled = false;
   var sayIt = function(greeting, name, punctuation) {
     sayItCalled = true;

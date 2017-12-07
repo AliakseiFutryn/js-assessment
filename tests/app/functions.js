@@ -3,7 +3,7 @@ if ( typeof window === 'undefined' ) {
   var expect = require('chai').expect;
 }
 
-describe.only('functions', function() {
+describe('functions', function() {
   var sayItCalled = false;
   var sayIt = function(greeting, name, punctuation) {
     sayItCalled = true;
@@ -69,7 +69,7 @@ describe.only('functions', function() {
     expect(functionsAnswers.useArguments(a, b, c, d)).to.eql(a + b + c + d);
   });
 
-  it('you should be able to apply functions with arbitrary numbers of arguments', function () {
+  it.only('you should be able to apply functions with arbitrary numbers of arguments', function () {
     (function () {
       var a = Math.random();
       var b = Math.random();

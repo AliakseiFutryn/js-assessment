@@ -29,11 +29,11 @@ exports.functionsAnswers = {
     return fn(...args);
   },
 
-  partialUsingArguments: function(fn) {
-
+  partialUsingArguments: function(fn, ...args) {
+    return (...partialArgs) => fn(...args, ...partialArgs);
   },
 
   curryIt: function(fn) {
-
+    return (a) => (b) => (c) => fn(a, b, c);
   }
 };

@@ -15,6 +15,6 @@ exports.numbersAnswers = {
   },
 
   multiply: function(a, b) {
-    
+   return Number((a*b).toFixed(10));;
   }
 };

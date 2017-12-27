@@ -29,7 +29,7 @@ describe('objects and context', function() {
     };
   });
 
-  it.only('you should be able to alter the context in which a method runs', function() {
+  it('you should be able to alter the context in which a method runs', function() {
     // define a function for fn so that the following will pass
     expect(objectsAnswers.alterContext(a.sayIt, b)).to.eql('Yo, Rebecca!');
   });

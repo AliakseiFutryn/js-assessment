@@ -95,7 +95,7 @@ describe('permutation', function() {
     expect(recursionAnswers.fibonacci(6)).to.eql(8);
   });
 
-  it('you should be able to return the set of all valid combinations of n pairs of parentheses.', function() {
+  it.only('you should be able to return the set of all valid combinations of n pairs of parentheses.', function() {
     var expected = [ '((()))', '(()())', '(())()', '()(())', '()()()'];
     var result = recursionAnswers.validParentheses(3);
 
